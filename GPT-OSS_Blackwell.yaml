@@ -1,0 +1,6 @@
+# Copied from https://docs.vllm.ai/projects/recipes/en/latest/OpenAI/GPT-OSS.html
+kv-cache-dtype: fp8
+no-enable-prefix-caching: true
+max-cudagraph-capture-size: 2048
+max-num-batched-tokens: 8192
+stream-interval: 20
