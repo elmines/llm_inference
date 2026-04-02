@@ -34,4 +34,5 @@ If you're using an editor like VSCode, the path to your python interpreter is `.
 We discourage using mechanisms like `hf auth login` to download models because that stores your token in plain text on the machine.
 
 ### Llama
-3. Go to Llama's [HuggingFace page](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) and request access for their models.
+For LLama 3, go their [HuggingFace page](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) and request access for their models.
+For LLama 4, go their [HuggingFace page](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct) and request access for their models.
