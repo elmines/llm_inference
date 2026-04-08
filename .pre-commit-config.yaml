@@ -7,3 +7,10 @@ repos:
     language: python
     require_serial: true
     types_or: [python]
+  # Adapted from https://github.com/RobertCraigie/pyright-python/blob/main/.pre-commit-hooks.yaml
+  - id: pyright
+    name: pyright
+    entry: pyright
+    language: python
+    types_or: [python, pyi]
+    require_serial: true

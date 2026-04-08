@@ -4,6 +4,7 @@ import sys
 from typing import Sequence, List
 
 from vllm import LLM, SamplingParams
+from vllm.inputs import TokensPrompt
 from openai_harmony import (
     HarmonyEncodingName,
     load_harmony_encoding,
@@ -59,7 +60,7 @@ class GptWrapper:
             stop_token_ids=self.encoding.stop_tokens_for_assistant_actions(),
         )
 
-        batch_prompts = [
+        batch_prompts: List[TokensPrompt] = [
             {
                 "prompt_token_ids": self.prompt_token_ids
                 + self.encoding.render_conversation_for_completion(
