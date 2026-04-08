@@ -1,0 +1,9 @@
+repos:
+- repo: local
+  hooks:
+  - id: black
+    name: black
+    entry: black --target-version py312
+    language: python
+    require_serial: true
+    types_or: [python]
